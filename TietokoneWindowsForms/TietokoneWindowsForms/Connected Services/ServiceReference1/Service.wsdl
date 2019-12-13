@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:50582/Service.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:50582/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:50582/Service.svc?xsd=xsd2" />
+      <xsd:import schemaLocation="http://localhost:50582/Service.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_SelectAllDistinctFromCPU_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllDistinctFromCPU" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllDistinctFromCPU_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllDistinctFromCPUResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllByBrandCPU_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllByBrandCPU" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllByBrandCPU_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllByBrandCPUResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectByIdFromCPU_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectByIdFromCPU" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectByIdFromCPU_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectByIdFromCPUResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllDistinctFromMOBO_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllDistinctFromMOBO" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllDistinctFromMOBO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllDistinctFromMOBOResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllByBrandMOBO_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllByBrandMOBO" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllByBrandMOBO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllByBrandMOBOResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllDistinctFromGPU_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllDistinctFromGPU" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllDistinctFromGPU_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllDistinctFromGPUResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllBySeriesGPU_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllBySeriesGPU" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllBySeriesGPU_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllBySeriesGPUResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllDistinctFromRAM_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllDistinctFromRAM" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllDistinctFromRAM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllDistinctFromRAMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllByBrandRAM_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllByBrandRAM" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllByBrandRAM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllByBrandRAMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllDistinctFromPSU_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllDistinctFromPSU" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllDistinctFromPSU_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllDistinctFromPSUResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllByBrandPSU_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllByBrandPSU" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllByBrandPSU_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllByBrandPSUResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectPowerByIdFromPSU_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectPowerByIdFromPSU" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectPowerByIdFromPSU_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectPowerByIdFromPSUResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllDistinctFromCase_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllDistinctFromCase" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllDistinctFromCase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllDistinctFromCaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllByBrandCase_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllByBrandCase" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllByBrandCase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllByBrandCaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_DeleteComputerById_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteComputerById" />
+  </wsdl:message>
+  <wsdl:message name="IService_DeleteComputerById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteComputerByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllComputers_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllComputers" />
+  </wsdl:message>
+  <wsdl:message name="IService_SelectAllComputers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllComputersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_InsertComputerDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertComputerDetails" />
+  </wsdl:message>
+  <wsdl:message name="IService_InsertComputerDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertComputerDetailsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService">
+    <wsdl:operation name="SelectAllDistinctFromCPU">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SelectAllDistinctFromCPU" message="tns:IService_SelectAllDistinctFromCPU_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SelectAllDistinctFromCPUResponse" message="tns:IService_SelectAllDistinctFromCPU_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllByBrandCPU">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SelectAllByBrandCPU" message="tns:IService_SelectAllByBrandCPU_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SelectAllByBrandCPUResponse" message="tns:IService_SelectAllByBrandCPU_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectByIdFromCPU">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SelectByIdFromCPU" message="tns:IService_SelectByIdFromCPU_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SelectByIdFromCPUResponse" message="tns:IService_SelectByIdFromCPU_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllDistinctFromMOBO">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SelectAllDistinctFromMOBO" message="tns:IService_SelectAllDistinctFromMOBO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SelectAllDistinctFromMOBOResponse" message="tns:IService_SelectAllDistinctFromMOBO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllByBrandMOBO">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SelectAllByBrandMOBO" message="tns:IService_SelectAllByBrandMOBO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SelectAllByBrandMOBOResponse" message="tns:IService_SelectAllByBrandMOBO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllDistinctFromGPU">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SelectAllDistinctFromGPU" message="tns:IService_SelectAllDistinctFromGPU_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SelectAllDistinctFromGPUResponse" message="tns:IService_SelectAllDistinctFromGPU_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllBySeriesGPU">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SelectAllBySeriesGPU" message="tns:IService_SelectAllBySeriesGPU_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SelectAllBySeriesGPUResponse" message="tns:IService_SelectAllBySeriesGPU_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllDistinctFromRAM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SelectAllDistinctFromRAM" message="tns:IService_SelectAllDistinctFromRAM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SelectAllDistinctFromRAMResponse" message="tns:IService_SelectAllDistinctFromRAM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllByBrandRAM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SelectAllByBrandRAM" message="tns:IService_SelectAllByBrandRAM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SelectAllByBrandRAMResponse" message="tns:IService_SelectAllByBrandRAM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllDistinctFromPSU">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SelectAllDistinctFromPSU" message="tns:IService_SelectAllDistinctFromPSU_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SelectAllDistinctFromPSUResponse" message="tns:IService_SelectAllDistinctFromPSU_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllByBrandPSU">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SelectAllByBrandPSU" message="tns:IService_SelectAllByBrandPSU_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SelectAllByBrandPSUResponse" message="tns:IService_SelectAllByBrandPSU_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectPowerByIdFromPSU">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SelectPowerByIdFromPSU" message="tns:IService_SelectPowerByIdFromPSU_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SelectPowerByIdFromPSUResponse" message="tns:IService_SelectPowerByIdFromPSU_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllDistinctFromCase">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SelectAllDistinctFromCase" message="tns:IService_SelectAllDistinctFromCase_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SelectAllDistinctFromCaseResponse" message="tns:IService_SelectAllDistinctFromCase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllByBrandCase">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SelectAllByBrandCase" message="tns:IService_SelectAllByBrandCase_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SelectAllByBrandCaseResponse" message="tns:IService_SelectAllByBrandCase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteComputerById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/DeleteComputerById" message="tns:IService_DeleteComputerById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/DeleteComputerByIdResponse" message="tns:IService_DeleteComputerById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllComputers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SelectAllComputers" message="tns:IService_SelectAllComputers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SelectAllComputersResponse" message="tns:IService_SelectAllComputers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertComputerDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/InsertComputerDetails" message="tns:IService_InsertComputerDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/InsertComputerDetailsResponse" message="tns:IService_InsertComputerDetails_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService" type="tns:IService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SelectAllDistinctFromCPU">
+      <soap:operation soapAction="http://tempuri.org/IService/SelectAllDistinctFromCPU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllByBrandCPU">
+      <soap:operation soapAction="http://tempuri.org/IService/SelectAllByBrandCPU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectByIdFromCPU">
+      <soap:operation soapAction="http://tempuri.org/IService/SelectByIdFromCPU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllDistinctFromMOBO">
+      <soap:operation soapAction="http://tempuri.org/IService/SelectAllDistinctFromMOBO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllByBrandMOBO">
+      <soap:operation soapAction="http://tempuri.org/IService/SelectAllByBrandMOBO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllDistinctFromGPU">
+      <soap:operation soapAction="http://tempuri.org/IService/SelectAllDistinctFromGPU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllBySeriesGPU">
+      <soap:operation soapAction="http://tempuri.org/IService/SelectAllBySeriesGPU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllDistinctFromRAM">
+      <soap:operation soapAction="http://tempuri.org/IService/SelectAllDistinctFromRAM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllByBrandRAM">
+      <soap:operation soapAction="http://tempuri.org/IService/SelectAllByBrandRAM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllDistinctFromPSU">
+      <soap:operation soapAction="http://tempuri.org/IService/SelectAllDistinctFromPSU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllByBrandPSU">
+      <soap:operation soapAction="http://tempuri.org/IService/SelectAllByBrandPSU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectPowerByIdFromPSU">
+      <soap:operation soapAction="http://tempuri.org/IService/SelectPowerByIdFromPSU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllDistinctFromCase">
+      <soap:operation soapAction="http://tempuri.org/IService/SelectAllDistinctFromCase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllByBrandCase">
+      <soap:operation soapAction="http://tempuri.org/IService/SelectAllByBrandCase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteComputerById">
+      <soap:operation soapAction="http://tempuri.org/IService/DeleteComputerById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllComputers">
+      <soap:operation soapAction="http://tempuri.org/IService/SelectAllComputers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertComputerDetails">
+      <soap:operation soapAction="http://tempuri.org/IService/InsertComputerDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="BasicHttpBinding_IService" binding="tns:BasicHttpBinding_IService">
+      <soap:address location="http://localhost:50582/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

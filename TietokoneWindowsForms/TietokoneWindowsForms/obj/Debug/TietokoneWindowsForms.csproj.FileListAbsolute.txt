@@ -1,0 +1,10 @@
+C:\Users\kamub\Desktop\OMA_MVC_WCF\TietokoneWindowsForms\TietokoneWindowsForms\bin\Debug\TietokoneWindowsForms.exe.config
+C:\Users\kamub\Desktop\OMA_MVC_WCF\TietokoneWindowsForms\TietokoneWindowsForms\bin\Debug\TietokoneWindowsForms.exe
+C:\Users\kamub\Desktop\OMA_MVC_WCF\TietokoneWindowsForms\TietokoneWindowsForms\bin\Debug\TietokoneWindowsForms.pdb
+C:\Users\kamub\Desktop\OMA_MVC_WCF\TietokoneWindowsForms\TietokoneWindowsForms\obj\Debug\TietokoneWindowsForms.csprojAssemblyReference.cache
+C:\Users\kamub\Desktop\OMA_MVC_WCF\TietokoneWindowsForms\TietokoneWindowsForms\obj\Debug\TietokoneWindowsForms.Form1.resources
+C:\Users\kamub\Desktop\OMA_MVC_WCF\TietokoneWindowsForms\TietokoneWindowsForms\obj\Debug\TietokoneWindowsForms.Properties.Resources.resources
+C:\Users\kamub\Desktop\OMA_MVC_WCF\TietokoneWindowsForms\TietokoneWindowsForms\obj\Debug\TietokoneWindowsForms.csproj.GenerateResource.cache
+C:\Users\kamub\Desktop\OMA_MVC_WCF\TietokoneWindowsForms\TietokoneWindowsForms\obj\Debug\TietokoneWindowsForms.csproj.CoreCompileInputs.cache
+C:\Users\kamub\Desktop\OMA_MVC_WCF\TietokoneWindowsForms\TietokoneWindowsForms\obj\Debug\TietokoneWindowsForms.exe
+C:\Users\kamub\Desktop\OMA_MVC_WCF\TietokoneWindowsForms\TietokoneWindowsForms\obj\Debug\TietokoneWindowsForms.pdb

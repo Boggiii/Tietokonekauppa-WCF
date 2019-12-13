@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TietokoneWCFService", "TietokoneWCFService\", "{330E27E6-A3A8-422D-B33F-680884C6DAD7}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50582"
+		Debug.AspNetCompiler.PhysicalPath = "TietokoneWCFService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50582\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50582"
+		Release.AspNetCompiler.PhysicalPath = "TietokoneWCFService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50582\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50582"
+		SlnRelativePath = "TietokoneWCFService\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{330E27E6-A3A8-422D-B33F-680884C6DAD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{330E27E6-A3A8-422D-B33F-680884C6DAD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {589DBB50-6EA8-4F46-B767-804F8FCA7444}
+	EndGlobalSection
+EndGlobal
